@@ -1,0 +1,105 @@
+Método lecturaclass post
+http://localhost:8081/lecturaclass
+Enviar:
+{
+"routelocalandnamefile":"C:\\texto.txt"
+}
+Devuelve:
+[
+    {
+        "clMetodo": "",
+        "clName": "Person",
+        "clVari": "",
+        "clScope": "public",
+        "clSignature": "",
+        "clDescription": "",
+        "clConstructor": "Person",
+        "clAtributo": "",
+        "clMParams": ""
+    },
+    {
+        "clMetodo": "",
+        "clName": "",
+        "clVari": "A",
+        "clScope": "private",
+        "clSignature": "int",
+        "clDescription": "",
+        "clConstructor": "",
+        "clAtributo": "year",
+        "clMParams": ""
+    },
+    {
+        "clMetodo": "getOlder",
+        "clName": "",
+        "clVari": "M",
+        "clScope": "public",
+        "clSignature": "void",
+        "clDescription": "",
+        "clConstructor": "",
+        "clAtributo": "",
+        "clMParams": "(int year)"
+    },
+    {
+        "clMetodo": "eat",
+        "clName": "",
+        "clVari": "M",
+        "clScope": "public",
+        "clSignature": "String",
+        "clDescription": "",
+        "clConstructor": "",
+        "clAtributo": "",
+        "clMParams": "()"
+    },
+    {
+        "clMetodo": "eat",
+        "clName": "",
+        "clVari": "M",
+        "clScope": "public",
+        "clSignature": "String",
+        "clDescription": "",
+        "clConstructor": "",
+        "clAtributo": "",
+        "clMParams": "(String food)"
+    },
+    {
+        "clMetodo": "eat",
+        "clName": "Person",
+        "clVari": "M",
+        "clScope": "public",
+        "clSignature": "String",
+        "clDescription": "",
+        "clConstructor": "Person",
+        "clAtributo": "",
+        "clMParams": "(String food)"
+    }
+]
+
+
+Retorno de objeto a enviar para metodo get save
+http://localhost:8081/save
+
+Devuelve :
+{
+    "datetime": "Fecha07042023",
+    "ruta": "C:\\Users\\Dell\\Downloads\\",
+    "information": "Este es el texto de prueba para ver que debo enviar!"
+}
+
+Formato para metodo savearchivos post
+http://localhost:8081/savearchivos
+Enviar:
+{
+    "datetime": "Fecha07042023",
+    "ruta": "C:\\Users\\Dell\\Downloads\\",
+    "information": "Este es el texto de prueba para ver que debo enviar!"
+}
+Devuelve:
+[
+    "Response",
+    "Archivo creado exitosamente!"
+]
+OR
+[
+    "Response",
+    "Archivo ya existe!"
+]
